@@ -1,78 +1,150 @@
-# California Housing Prices Analysis
+# California Housing Prices Analysis Project
 
-This project analyzes the California Housing Prices dataset to build and evaluate prediction models, with specific focus on insights for real estate agents, property developers, and investors.
+A comprehensive analysis of California housing prices with specific insights for real estate agents, property developers, and investors.
+
+## Available Notebooks
+
+1. **california_housing_analysis_final.ipynb**
+   - Main analysis notebook with complete implementation
+   - Includes data preprocessing, visualization, and modeling
+   - Uses robust plotting configuration
+   - Best for end-to-end analysis
+
+2. **california_housing_analysis_with_applications.ipynb**
+   - Extended analysis with real-world applications
+   - Specific sections for:
+     - Real Estate Agent Analysis
+     - Property Developer Analysis
+     - Investment Opportunities
+   - Enhanced visualizations and market insights
+
+3. **california_housing_analysis_v2.ipynb**
+   - Updated version with improved plotting configuration
+   - Fixed style-related issues
+   - Enhanced data visualization
+   - Optimized code structure
+
+4. **california_housing_analysis_fixed.ipynb**
+   - Version with basic plotting fixes
+   - Simplified analysis workflow
+   - Good starting point for beginners
 
 ## Setup Instructions
 
-1. Install Python packages first:
+1. Install required packages:
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn kaggle folium --upgrade
    ```
 
-2. Set up Kaggle API credentials:
-   - Go to your Kaggle account settings (https://www.kaggle.com/account)
-   - Click on "Create New API Token" to download `kaggle.json`
-   - Place the `kaggle.json` file in:
-     - Windows: `C:\Users\<Windows-username>\.kaggle\kaggle.json`
+2. Set up Kaggle credentials:
+   - Go to kaggle.com → Account → Create API Token
+   - Download `kaggle.json`
+   - Place in:
+     - Windows: `C:\Users\<username>\.kaggle\kaggle.json`
      - Linux/Mac: `~/.kaggle/kaggle.json`
 
-3. Launch Jupyter Notebook:
+3. Clone this repository:
    ```bash
-   jupyter notebook
+   git clone https://github.com/lalitnayyar/iimkmodule3assignment.git
+   cd iimkmodule3assignment
    ```
 
-4. Open `california_housing_analysis_v2.ipynb` and run the cells in sequence
-   - The notebook uses a custom plotting configuration that works across all environments
-   - No style-related errors will occur
-   - The dataset will be downloaded automatically when you run the notebook
+## User Guide
 
-## Project Structure
+### Getting Started
+1. Start with `california_housing_analysis_final.ipynb`
+2. Run cells in sequence
+3. Dataset will be downloaded automatically
 
-- `california_housing_analysis_v2.ipynb`: Main analysis notebook with robust plotting configuration
-- `requirements.txt`: Python package dependencies
-- `housing.csv`: Dataset (downloaded automatically by the notebook)
+### Notebook Features
 
-## Analysis Sections
+#### Data Analysis
+- Data loading and preprocessing
+- Missing value handling
+- Feature engineering
+- Statistical analysis
 
-### 1. Real Estate Agent Analysis
-- Regional price distribution analysis with custom visualizations
-- Local market factor visualization using matplotlib's native plotting
-- Price prediction models by region
-- Market dynamics charts
+#### Visualizations
+- Price distribution maps
+- Location-based analysis
+- Market segment visualization
+- Trend analysis charts
 
-### 2. Property Developer Analysis
-- Market segmentation analysis
-- Population density heat maps
-- Development potential scoring
-- Income level distribution
+#### Models and Predictions
+- Linear regression
+- Price prediction models
+- Market segmentation
+- Investment scoring
 
-### 3. Investor Analysis
-- Investment opportunity heat maps
-- Growth potential metrics
-- Income trend analysis
-- ROI prediction models
+### Stakeholder-Specific Insights
 
-## Features
+1. **For Real Estate Agents**
+   - Regional price trends
+   - Neighborhood analysis
+   - Price prediction tools
+   - Client recommendation features
 
-1. **Robust Visualization Setup**
-   - Custom plotting configuration that works everywhere
-   - No dependency on external style files
-   - Consistent appearance across different environments
+2. **For Property Developers**
+   - Land value analysis
+   - Development opportunity scoring
+   - Population density insights
+   - Growth potential metrics
 
-2. **Automated Data Handling**
-   - Automatic dataset download via Kaggle API
-   - Fallback to manual download if needed
-   - Built-in data preprocessing
-
-3. **Comprehensive Analysis**
-   - Region-specific insights
-   - Market segmentation
-   - Investment scoring
-   - Growth potential analysis
+3. **For Investors**
+   - ROI predictions
+   - Market timing analysis
+   - Risk assessment tools
+   - Portfolio optimization
 
 ## Troubleshooting
 
-If you encounter any issues:
-1. Make sure all packages are up to date using the install command above
-2. The notebook uses a custom plotting setup that avoids any style-related errors
-3. If you can't download the dataset automatically, use the manual download link provided in the notebook
+### Common Issues
+
+1. **Plotting Issues**
+   - Use the provided `plot_fix.py` configuration
+   - Import with: `from plot_fix import configure_plots`
+   - Run `configure_plots()` before creating visualizations
+
+2. **Data Loading Issues**
+   - Ensure `housing.csv` is in the project directory
+   - Check Kaggle API credentials if using automatic download
+
+3. **Package Issues**
+   - Run `pip install -r requirements.txt`
+   - Ensure all dependencies are up to date
+
+### Getting Help
+- Check the [GitHub Issues](https://github.com/lalitnayyar/iimkmodule3assignment/issues)
+- Review notebook comments for specific guidance
+- Use provided helper functions in utility files
+
+## Project Structure
+
+```
+iimkmodule3assignment/
+├── notebooks/
+│   ├── california_housing_analysis_final.ipynb
+│   ├── california_housing_analysis_with_applications.ipynb
+│   ├── california_housing_analysis_v2.ipynb
+│   └── california_housing_analysis_fixed.ipynb
+├── utils/
+│   ├── plot_fix.py
+│   ├── plot_config.py
+│   └── notebook_setup.py
+├── data/
+│   └── housing.csv
+├── requirements.txt
+└── README.md
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
