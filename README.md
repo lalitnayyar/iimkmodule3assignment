@@ -1,3 +1,9 @@
+# Course: IIMK's Professional Certificate in Data Science and Artificial Intelligence for Managers
+
+**Student Name:** Lalit Nayyar  
+**Email ID:** lalitnayyar@gmail.com  
+**Assignment Name:** Week 3: Required Assignment 3.1
+
 # California Housing Prices Analysis Project
 
 A comprehensive analysis of California housing prices with specific insights for real estate agents, property developers, and investors.
