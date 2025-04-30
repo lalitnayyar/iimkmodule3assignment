@@ -2,149 +2,139 @@
 
 A comprehensive analysis of California housing prices with specific insights for real estate agents, property developers, and investors.
 
-## Available Notebooks
+## Jupyter Notebooks Overview
 
-1. **california_housing_analysis_final.ipynb**
+All notebooks are prefixed with "LalitNayyarIIMK_" for identification. Here's a detailed overview of each notebook:
+
+1. **`LalitNayyarIIMK_california_housing_analysis_final.ipynb`**
    - Main analysis notebook with complete implementation
-   - Includes data preprocessing, visualization, and modeling
-   - Uses robust plotting configuration
-   - Best for end-to-end analysis
+   - Features comprehensive data preprocessing and cleaning
+   - Includes detailed visualizations and statistical analysis
+   - Contains price prediction models and evaluation
+   - Best suited for end-to-end understanding of the analysis
 
-2. **california_housing_analysis_with_applications.ipynb**
-   - Extended analysis with real-world applications
-   - Specific sections for:
-     - Real Estate Agent Analysis
-     - Property Developer Analysis
-     - Investment Opportunities
-   - Enhanced visualizations and market insights
+2. **`LalitNayyarIIMK_california_housing_analysis_with_applications.ipynb`**
+   - Advanced analysis with real-world applications
+   - Sections include:
+     - Real Estate Price Estimation
+     - Regional Market Analysis (coastal vs. inland)
+     - Investment Opportunity Scoring
+     - Population Density Impact Studies
+   - Features interactive visualizations and detailed insights
+   - Recommended for business stakeholders and decision makers
 
-3. **california_housing_analysis_v2.ipynb**
-   - Updated version with improved plotting configuration
-   - Fixed style-related issues
-   - Enhanced data visualization
-   - Optimized code structure
-
-4. **california_housing_analysis_fixed.ipynb**
-   - Version with basic plotting fixes
-   - Simplified analysis workflow
-   - Good starting point for beginners
-
-## Setup Instructions
-
-1. Install required packages:
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn kaggle folium --upgrade
-   ```
-
-2. Set up Kaggle credentials:
-   - Go to kaggle.com → Account → Create API Token
-   - Download `kaggle.json`
-   - Place in:
-     - Windows: `C:\Users\<username>\.kaggle\kaggle.json`
-     - Linux/Mac: `~/.kaggle/kaggle.json`
-
-3. Clone this repository:
-   ```bash
-   git clone https://github.com/lalitnayyar/iimkmodule3assignment.git
-   cd iimkmodule3assignment
-   ```
+3. **`LalitNayyarIIMK_california_housing_analysis_v2.ipynb`**
+   - Alternative analysis approach
+   - Focuses on advanced statistical methods
+   - Includes experimental features and additional visualizations
+   - Suitable for technical users interested in methodology
 
 ## User Guide
 
 ### Getting Started
-1. Start with `california_housing_analysis_final.ipynb`
-2. Run cells in sequence
-3. Dataset will be downloaded automatically
 
-### Notebook Features
+1. **Environment Setup**
+   ```bash
+   # Install required packages
+   pip install -r requirements.txt
+   ```
 
-#### Data Analysis
-- Data loading and preprocessing
-- Missing value handling
-- Feature engineering
-- Statistical analysis
+2. **Launching Notebooks**
+   ```bash
+   # Start Jupyter Notebook
+   jupyter notebook
+   ```
 
-#### Visualizations
-- Price distribution maps
-- Location-based analysis
-- Market segment visualization
-- Trend analysis charts
+3. **Notebook Selection**
+   - For first-time users: Start with `LalitNayyarIIMK_california_housing_analysis_final.ipynb`
+   - For business applications: Use `LalitNayyarIIMK_california_housing_analysis_with_applications.ipynb`
+   - For advanced analysis: Explore `LalitNayyarIIMK_california_housing_analysis_v2.ipynb`
 
-#### Models and Predictions
-- Linear regression
-- Price prediction models
-- Market segmentation
-- Investment scoring
+### Using the Notebooks
 
-### Stakeholder-Specific Insights
+1. **Data Loading**
+   - Each notebook automatically loads the housing dataset
+   - Data is preprocessed and cleaned using standardized functions
+   - Missing values are handled appropriately
 
-1. **For Real Estate Agents**
-   - Regional price trends
-   - Neighborhood analysis
-   - Price prediction tools
-   - Client recommendation features
+2. **Navigation**
+   - Use the table of contents (if available) to jump to specific sections
+   - Run cells in sequence (Shift + Enter)
+   - Wait for each cell to complete before running the next
 
-2. **For Property Developers**
-   - Land value analysis
-   - Development opportunity scoring
-   - Population density insights
-   - Growth potential metrics
+3. **Visualizations**
+   - Interactive plots can be zoomed and panned
+   - Hover over data points for detailed information
+   - Use the plot toolbar for additional options
 
-3. **For Investors**
-   - ROI predictions
-   - Market timing analysis
-   - Risk assessment tools
-   - Portfolio optimization
+4. **Analysis Features**
+   - Price Prediction: Models for estimating house values
+   - Regional Analysis: Comparison of coastal vs. inland markets
+   - Investment Scoring: Automated scoring system for investment opportunities
+   - Market Trends: Temporal and geographical trend analysis
 
-## Troubleshooting
+### Common Tasks
 
-### Common Issues
+1. **Updating Data**
+   - Place new data in the project directory
+   - Update file paths if necessary
+   - Re-run the notebook from start
 
-1. **Plotting Issues**
-   - Use the provided `plot_fix.py` configuration
-   - Import with: `from plot_fix import configure_plots`
-   - Run `configure_plots()` before creating visualizations
+2. **Customizing Analysis**
+   - Modify parameters in marked cells
+   - Adjust visualization settings as needed
+   - Update feature selection for models
 
-2. **Data Loading Issues**
-   - Ensure `housing.csv` is in the project directory
-   - Check Kaggle API credentials if using automatic download
+3. **Exporting Results**
+   - Use "File > Download as" for various formats
+   - Export visualizations using the save button
+   - Copy code cells for external use
 
-3. **Package Issues**
-   - Run `pip install -r requirements.txt`
-   - Ensure all dependencies are up to date
+### Troubleshooting
 
-### Getting Help
-- Check the [GitHub Issues](https://github.com/lalitnayyar/iimkmodule3assignment/issues)
-- Review notebook comments for specific guidance
-- Use provided helper functions in utility files
+1. **Missing Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Memory Issues**
+   - Restart kernel and clear output
+   - Run only necessary cells
+   - Reduce data size if needed
+
+3. **Visualization Problems**
+   - Ensure all plotting libraries are imported
+   - Check for style conflicts
+   - Reset plot parameters if needed
 
 ## Project Structure
 
 ```
 iimkmodule3assignment/
 ├── notebooks/
-│   ├── california_housing_analysis_final.ipynb
-│   ├── california_housing_analysis_with_applications.ipynb
-│   ├── california_housing_analysis_v2.ipynb
-│   └── california_housing_analysis_fixed.ipynb
+│   ├── LalitNayyarIIMK_california_housing_analysis_final.ipynb
+│   ├── LalitNayyarIIMK_california_housing_analysis_with_applications.ipynb
+│   └── LalitNayyarIIMK_california_housing_analysis_v2.ipynb
 ├── utils/
-│   ├── plot_fix.py
-│   ├── plot_config.py
-│   └── notebook_setup.py
+│   ├── LalitNayyarIIMK_plot_fix.py
+│   ├── LalitNayyarIIMK_plot_config.py
+│   └── LalitNayyarIIMK_plot_config_v2.py
 ├── data/
 │   └── housing.csv
 ├── requirements.txt
 └── README.md
 ```
 
-## Contributing
+## Support
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+For any issues or questions:
+1. Check the troubleshooting section
+2. Review cell execution order
+3. Verify data file presence and format
+4. Ensure all dependencies are installed
 
-## License
+## Version History
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- v1.0: Initial release with basic analysis
+- v2.0: Added advanced features and applications
+- v3.0: Included regional analysis and investment scoring
